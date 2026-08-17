@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renato Lazarini-ME | Locação de Estruturas Natalinas</title>
+<meta name="description" content="Locação de estruturas de ferro para decoração natalina. Árvores, anjos, velas, renas, túneis, portais, presépios e estruturas para cidades, praças, empresas e espaços públicos.">
+<style>
+:root {
+  --bg:#07101b;
+  --bg2:#0c1726;
+  --gold:#d5a84b;
+  --gold2:#f3d98d;
+  --text:#f7f5ef;
+  --muted:#c8cfda;
+  --line:rgba(255,255,255,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+a{color:inherit;text-decoration:none}
+.container{width:min(1160px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(5,12,20,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-weight:800;letter-spacing:.8px;font-size:18px}
+.brand small{display:block;font-size:11px;font-weight:600;color:var(--gold2);letter-spacing:1.6px;margin-top:2px}
+.menu{display:flex;gap:22px;font-size:14px;color:#e8ebef}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:999px;font-weight:800;border:1px solid var(--gold);background:var(--gold);color:#10151c;transition:.2s}
+.btn:hover{transform:translateY(-1px)}
+.btn.secondary{background:transparent;color:var(--text);border-color:rgba(255,255,255,.32)}
+.hero{min-height:92vh;display:flex;align-items:center;position:relative;background:
+linear-gradient(90deg,rgba(4,10,17,.96) 0%,rgba(4,10,17,.74) 43%,rgba(4,10,17,.18) 76%),
+url('images/projeto-05.jpeg') center/cover no-repeat;}
+.hero .content{padding-top:86px;max-width:720px}
+.eyebrow{display:inline-block;color:var(--gold2);font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.02;margin:0 0 18px;letter-spacing:-1.6px}
+.hero p{font-size:clamp(18px,2vw,22px);color:#edf0f4;max-width:660px;margin:0 0 28px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.note{margin-top:18px;font-size:13px;color:#d3d9e1}
+section{padding:88px 0}
+.section-title{font-size:clamp(30px,4vw,48px);line-height:1.1;margin:0 0 14px}
+.section-lead{color:var(--muted);max-width:760px;margin:0 0 36px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(180deg,#101c2b,#0a1421);border:1px solid var(--line);border-radius:20px;padding:26px}
+.card h3{margin:0 0 10px;font-size:21px}
+.card p{margin:0;color:var(--muted)}
+.highlight{background:linear-gradient(135deg,#111b2a,#171407);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.grid-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.grid-gallery figure{margin:0;position:relative;overflow:hidden;border-radius:16px;aspect-ratio:4/3;background:#0f1720}
+.grid-gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}
+.grid-gallery figure:hover img{transform:scale(1.035)}
+.badge{position:absolute;left:12px;bottom:12px;background:rgba(4,9,15,.72);border:1px solid rgba(255,255,255,.18);padding:8px 10px;border-radius:999px;font-size:12px;backdrop-filter:blur(8px)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.step{padding:24px;border-top:2px solid var(--gold);background:#0c1725}
+.step b{display:block;color:var(--gold2);margin-bottom:8px}
+.cta{text-align:center;padding:80px 20px;border-radius:28px;background:linear-gradient(135deg,#18243a,#201804);border:1px solid rgba(213,168,75,.35)}
+.cta h2{font-size:clamp(34px,5vw,54px);margin:0 0 14px}
+.cta p{max-width:730px;margin:0 auto 26px;color:#d6dce4}
+footer{padding:38px 0;border-top:1px solid var(--line);color:#bfc7d1;font-size:14px}
+.footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:900px){
+ .menu{display:none}
+ .cards{grid-template-columns:1fr}
+ .grid-gallery{grid-template-columns:1fr 1fr}
+ .steps{grid-template-columns:1fr 1fr}
+ .hero{min-height:86vh;background-position:62% center}
+}
+@media(max-width:600px){
+ nav .btn{padding:10px 14px;font-size:12px}
+ .grid-gallery{grid-template-columns:1fr}
+ .steps{grid-template-columns:1fr}
+ section{padding:68px 0}
+ .hero{min-height:88vh;background-position:67% center}
+ .hero .content{padding-top:95px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="#inicio" class="brand">RENATO LAZARINI-ME<small>ESTRUTURAS NATALINAS</small></a>
+    <div class="menu">
+      <a href="#servicos">Estruturas</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <a class="btn" href="https://wa.me/5517997145530?text=Olá,%20quero%20um%20orçamento%20para%20locação%20de%20estruturas%20natalinas." target="_blank">PEDIR ORÇAMENTO</a>
+  </div>
+</nav>
+
+<header id="inicio" class="hero">
+  <div class="container">
+    <div class="content">
+      <span class="eyebrow">Locação de estruturas para decoração natalina</span>
+      <h1>Transforme sua cidade em um cenário inesquecível de Natal.</h1>
+      <p>Aluguel de estruturas de ferro para projetos natalinos em prefeituras, praças, avenidas, empresas e espaços públicos.</p>
+      <div class="hero-actions">
+        <a class="btn" href="https://wa.me/5517997145530?text=Olá,%20quero%20um%20orçamento%20para%20locação%20de%20estruturas%20natalinas." target="_blank">QUERO ALUGAR AS ESTRUTURAS</a>
+        <a class="btn secondary" href="#projetos">VER PROJETOS PRONTOS</a>
+      </div>
+      <div class="note">As imagens deste site mostram projetos reais já executados com nossas estruturas.</div>
+    </div>
+  </div>
+</header>
+
+<section id="destaques" style="padding:52px 0 76px">
+  <div class="container">
+    <span class="eyebrow">Inspire-se</span>
+    <h2 class="section-title">Veja nossas estruturas em projetos reais</h2>
+    <p class="section-lead">Alguns exemplos de como nossas estruturas de ferro podem transformar praças, avenidas, prédios públicos e outros espaços durante o Natal.</p>
+    <div class="grid-gallery">
+      <figure><img src="images/projeto-05.jpeg" alt="Árvore de Natal iluminada em projeto real"><span class="badge">Árvore de Natal iluminada</span></figure>
+      <figure><img src="images/projeto-16.jpeg" alt="Túnel natalino iluminado em projeto real"><span class="badge">Túnel de estrelas</span></figure>
+      <figure><img src="images/projeto-12.jpeg" alt="Velas natalinas em projeto real"><span class="badge">Velas gigantes</span></figure>
+      <figure><img src="images/projeto-13.jpeg" alt="Anjos iluminados em projeto real"><span class="badge">Anjos e decoração de praça</span></figure>
+    </div>
+    <div style="text-align:center;margin-top:28px">
+      <a class="btn secondary" href="#projetos">VER TODOS OS PROJETOS</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="servicos">
+  <div class="container">
+    <span class="eyebrow">Nosso catálogo de possibilidades</span>
+    <h2 class="section-title">Estruturas natalinas para diferentes espaços</h2>
+    <p class="section-lead">Trabalhamos com locação de estruturas metálicas decorativas que podem compor projetos completos de iluminação natalina.</p>
+    <div class="cards">
+      <div class="card"><h3>Árvores e elementos centrais</h3><p>Estruturas de destaque para praças, jardins, prédios públicos e entradas principais.</p></div>
+      <div class="card"><h3>Portais e túneis</h3><p>Estruturas iluminadas para criar caminhos, entradas e pontos fotográficos de grande impacto.</p></div>
+      <div class="card"><h3>Anjos, velas e presépios</h3><p>Peças decorativas temáticas para compor cenários clássicos e sofisticados de Natal.</p></div>
+      <div class="card"><h3>Renas e figuras natalinas</h3><p>Estruturas ideais para jardins, praças e composições com árvores, portais e áreas de convivência.</p></div>
+      <div class="card"><h3>Fachadas e áreas públicas</h3><p>Soluções para valorizar prédios públicos, câmaras municipais, prefeituras e espaços institucionais.</p></div>
+      <div class="card"><h3>Projetos personalizados</h3><p>A composição pode ser planejada de acordo com o espaço, quantidade de peças e proposta do cliente.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="highlight" id="projetos">
+  <div class="container">
+    <span class="eyebrow">Portfólio real</span>
+    <h2 class="section-title">Projetos prontos com nossas estruturas</h2>
+    <p class="section-lead">As fotos abaixo são de instalações reais e servem como referência para mostrar o resultado final que pode ser criado com as estruturas disponíveis para locação.</p>
+    <div class="grid-gallery">
+      <figure><img src="images/projeto-01.jpeg" alt="Presépio iluminado" loading="lazy"><span class="badge">Presépio iluminado</span></figure>
+      <figure><img src="images/projeto-02.jpeg" alt="Velas decorativas" loading="lazy"><span class="badge">Velas decorativas</span></figure>
+      <figure><img src="images/projeto-03.jpeg" alt="Anjos e iluminação de jardim" loading="lazy"><span class="badge">Anjos e iluminação de jardim</span></figure>
+      <figure><img src="images/projeto-04.jpeg" alt="Árvore natalina" loading="lazy"><span class="badge">Árvore natalina</span></figure>
+      <figure><img src="images/projeto-05.jpeg" alt="Projeto em prédio público" loading="lazy"><span class="badge">Projeto em prédio público</span></figure>
+      <figure><img src="images/projeto-06.jpeg" alt="Figura natalina iluminada" loading="lazy"><span class="badge">Figura natalina iluminada</span></figure>
+      <figure><img src="images/projeto-07.jpeg" alt="Velas gigantes" loading="lazy"><span class="badge">Velas gigantes</span></figure>
+      <figure><img src="images/projeto-08.jpeg" alt="Casa do Papai Noel" loading="lazy"><span class="badge">Casa do Papai Noel</span></figure>
+      <figure><img src="images/projeto-09.jpeg" alt="Portais iluminados" loading="lazy"><span class="badge">Portais iluminados</span></figure>
+      <figure><img src="images/projeto-10.jpeg" alt="Árvore e anjo" loading="lazy"><span class="badge">Árvore e anjo</span></figure>
+      <figure><img src="images/projeto-11.jpeg" alt="Iluminação de praça" loading="lazy"><span class="badge">Iluminação de praça</span></figure>
+      <figure><img src="images/projeto-12.jpeg" alt="Velas natalinas" loading="lazy"><span class="badge">Velas natalinas</span></figure>
+      <figure><img src="images/projeto-13.jpeg" alt="Anjos decorativos" loading="lazy"><span class="badge">Anjos decorativos</span></figure>
+      <figure><img src="images/projeto-14.jpeg" alt="Túnel natalino" loading="lazy"><span class="badge">Túnel natalino</span></figure>
+      <figure><img src="images/projeto-15.jpeg" alt="Renas e portais" loading="lazy"><span class="badge">Renas e portais</span></figure>
+      <figure><img src="images/projeto-16.jpeg" alt="Túnel de estrelas" loading="lazy"><span class="badge">Túnel de estrelas</span></figure>
+      <figure><img src="images/projeto-17.jpeg" alt="Projeto completo em prédio público" loading="lazy"><span class="badge">Projeto completo em prédio público</span></figure>
+      <figure><img src="images/projeto-18.jpeg" alt="Fachada iluminada" loading="lazy"><span class="badge">Fachada iluminada</span></figure>
+      <figure><img src="images/projeto-19.jpeg" alt="Árvore central iluminada" loading="lazy"><span class="badge">Árvore central iluminada</span></figure>
+
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona">
+  <div class="container">
+    <span class="eyebrow">Locação simples e direta</span>
+    <h2 class="section-title">Como funciona</h2>
+    <p class="section-lead">Entre em contato, conte o tamanho e o tipo de espaço que deseja decorar e montamos uma proposta de locação de acordo com a disponibilidade das estruturas.</p>
+    <div class="steps">
+      <div class="step"><b>01</b><strong>Contato</strong><p>Fale conosco pelo WhatsApp.</p></div>
+      <div class="step"><b>02</b><strong>Escolha</strong><p>Definimos as estruturas e o estilo do projeto.</p></div>
+      <div class="step"><b>03</b><strong>Orçamento</strong><p>Você recebe a proposta de locação.</p></div>
+      <div class="step"><b>04</b><strong>Projeto</strong><p>As estruturas compõem o cenário natalino do espaço.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="container">
+    <div class="cta">
+      <span class="eyebrow">Reserve com antecedência</span>
+      <h2>Seu projeto de Natal começa aqui.</h2>
+      <p>Fale com a Renato Lazarini-ME e consulte disponibilidade, modelos de estruturas e condições para locação.</p>
+      <a class="btn" href="https://wa.me/5517997145530?text=Olá,%20quero%20consultar%20a%20locação%20de%20estruturas%20para%20decoração%20natalina." target="_blank">FALAR NO WHATSAPP — (17) 99714-5530</a>
+      <div style="margin-top:18px"><a href="mailto:renatolazarinim@gmail.com" style="color:var(--gold2);font-weight:700">renatolazarinim@gmail.com</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div><strong>RENATO LAZARINI-ME</strong><br>CNPJ: 42.292.057/0001-51</div>
+    <div>Locação de estruturas de ferro para decoração natalina<br>WhatsApp: (17) 99714-5530<br>E-mail: <a href="mailto:renatolazarinim@gmail.com">renatolazarinim@gmail.com</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
