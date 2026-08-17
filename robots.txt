@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://renatolazarini18.github.io/Renato-Lazarini-Natal/sitemap.xml
